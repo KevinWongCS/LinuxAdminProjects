@@ -1,0 +1,11 @@
+name: kevin
+date: 05/28/2022
+desc: Problem when windows 10 client trying to ssh into ubuntu server in hypervisor(Oracle VirtualBox)
+
+- fix:
+  - In the VirtualBox Manager inside the server settings, change the Network from "NAT" to "Bridged Adapter".
+  
+  - Make sure windows features "Windows Subsystem for Linux" and "Telnet" is checked
+  
+  - Make sure in windows services "OpenSSH Authentication Agent" and "OpenSSH SSH server" status is "running"
+ 

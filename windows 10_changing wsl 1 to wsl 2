@@ -1,6 +1,6 @@
 name: kevin wong
 date: 05/29/2022
-desc: problem with wsl not being version 2 
+desc: Using Windows 10 problem with wsl not being version 2 
 
 solution: In windows powershell terminal enter "wsl --set-version <distro name> 2"
   example: "wsl --set-version Ubuntu 2"

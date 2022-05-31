@@ -6,3 +6,5 @@ desc: useful commands in linux
   hows the username if typed in without options
   shows the ip address if typed in with -I iption "hostname -I"
  
+- sudo
+  frowned upon: "sudo -s" to switch to root

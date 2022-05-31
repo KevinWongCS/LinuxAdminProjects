@@ -1,0 +1,8 @@
+name: kevin wong
+date: 05/31/2021
+desc: useful commands in linux
+
+- hostname
+  hows the username if typed in without options
+  shows the ip address if typed in with -I iption "hostname -I"
+ 

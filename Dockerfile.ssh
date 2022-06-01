@@ -1,0 +1,24 @@
+FROM test-gui-01
+
+# run "apt update", updates the repositories
+# below are some basic gui apps we are using in this test:
+    # then run pcmanfm, a basic file manager
+    # then featherpad, a basic text editor
+    # then lxtask, a basic task manager
+    # then xterm, a basic terminal
+RUN \
+    apt update &&\
+    apt install -y openssh-server
+
+# location of file below: "cat /etc/ssh/sshd_config"
+RUN sed -i 's/#*X11Forwarding.*/X11Forwarding yes/' /etc/ssh/sshd_config
+RUN sed -i 's/#*X11UseLocalhost.*/X11UseLocalhost no/' /etc/ssh/sshd_config
+
+# it is not recommended to allow connections as the root user so useradd
+RUN useradd -m testuser -p $(openssl passwd 1234)
+
+# expose ssh port
+EXPOSE 22
+
+# start ssh service and wait for incoming connection
+CMD service ssh start ; bash

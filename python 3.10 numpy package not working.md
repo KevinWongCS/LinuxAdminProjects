@@ -2,7 +2,7 @@ name: kevin wong
 
 date: 06/03/2022
 
-desc: used pip install numpy, but when running code with "import numpy as numpy" the code still doesn't respond
+desc: used pip install numpy, but when running code with "import numpy as numpy" the compiler can't find numpy
 
 ### problem
   Initial install:

@@ -2,12 +2,13 @@ name: kevin wong
 
 date: 06/11/2021
 
-desc: 0x0000011b error message while trying to access printer connected to a computer on the same network
+desc: 0x0000011b error message while trying to access printer connected to a computer on the same network on Windows 10
 
 ### Adding Printer
 - Control Panel > Add a printer > The printer that I want isn't listed > Select a shared printer by name > 0x0000011b error message
   - Don't have a current fix
   - Google searches reveal security configurations need to be configured to get this method to work.
+  - https://www.youtube.com/watch?v=5R15NKBU9co possible fix but on Windows 11
 
 ### Finding the Printer Path
 - Search > View network computers and devices > locate other computer
